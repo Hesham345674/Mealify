@@ -247,7 +247,7 @@
 }
 
 
-@media (min-width : 1000px ) {
+@media (min-width : 1001px ) and (max-width : 1260px) {
 
     .nav #nav h1 a span {
         left: 100px; 
@@ -292,7 +292,7 @@
     width: 33%;
     }
     .chefs .container .outter .inner .image::before {
-        top: 250px; 
+        /* top: 250px;  */
     }
 }
 
