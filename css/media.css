@@ -1,0 +1,299 @@
+
+@media screen and (500px<= width <= 767px) {
+    
+    .landing{
+        height: auto;
+    }
+    .container {
+        padding: 0 20px;
+    }
+
+    .landing .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-content {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .header-content h2 {
+        font-size: 50px;
+    }
+
+    .landing .image {
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 0;
+    }
+
+    .header-content .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+   
+    .chefs .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chefs .container .outter {
+        width: 100%;
+    }
+    .chefs .container .outter .inner .image::before{
+        
+        top: 215px;
+    }
+    .chefs .container .outter .inner .icons{
+        display: none;
+    }
+  
+ .gallery .gallery-style .container{
+    display: flex;
+    flex-direction: column;
+ }
+
+    
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact .data {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact .outter {
+        min-width: 100%;
+    }
+     .contact .outter .contactinfo h2{
+        text-align: start;
+     }
+
+    .contact .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+   
+    .footer .footer-container {
+        flex-direction: column;
+        
+        gap: 30px;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+    .logo {
+        width: 15%;
+        
+    }
+
+    .footer-col span{
+        align-items: start;
+    }
+    .footer-col p{
+        align-items: start;
+        padding-top: 5px;
+    }
+    .social-media-heading .social-icons{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .footer-col.newsletter-col h4{
+    align-items: left;
+    padding-top: 5px;
+    }
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .links-group {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+}
+
+
+
+@media (  min-width: 768px) and (max-width :1000px) {
+   .landing{
+        height: auto;
+    }
+    .container {
+        padding: 0 20px;
+    }
+
+    .landing .container {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-content {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .header-content h2 {
+        font-size: 50px;
+    }
+
+    .landing .image {
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 0;
+    }
+
+    .header-content .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Chefs Section */
+    .chefs .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .chefs .container .outter {
+       width: calc(calc(100% - var(--gap)) / 2);
+    }
+    .chefs .container .outter .inner .image::before{
+       
+        top: 280px;
+    }
+    .chefs .container .outter .inner .icons{
+        display: none;
+    }
+
+    
+    .contact .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .contact .data {
+        flex-direction: column;
+        padding: 0;
+        align-items: start;
+    }
+
+    .contact .outter {
+        min-width: 100%;
+    }
+     .contact .outter .contactinfo h2{
+        text-align: start;
+     }
+
+    .contact .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    
+    .footer .footer-container {
+        flex-direction: column;
+ 
+        gap: 30px;
+        width: 70%;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+    .logo {
+        width: 15%;
+        
+    }
+
+    .footer-col span{
+        align-items: start;
+    }
+    .footer-col p{
+        align-items: start;
+        padding-top: 5px;
+    }
+    .footer-container .social-icons i{
+        text-align: center;
+        
+    }
+    .footer-col.newsletter-col p{
+        margin-bottom: 10px;
+    }
+    .footer-col.newsletter-col h4{
+    align-items: left;
+    padding-top: 5px;
+    }
+    .subscribe-form input[type="email" ]{
+        width: 50%;
+    }
+
+    .links-group {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+}
+
+
+@media (min-width : 1000px ) {
+
+    .nav #nav h1 a span {
+        left: 100px; 
+    }
+
+    .nav #nav ul {
+        gap: 15px; 
+    }
+
+   
+    .landing .container {
+        flex-direction: row-reverse;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-content {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .header-content h2 {
+        font-size: 60px; 
+    }
+
+    .landing .image {
+        width: 80%; 
+        margin: 30px auto; 
+        padding-top: 0;
+    }
+
+    .header-content .buttons {
+        justify-content: center; 
+    }
+
+    /* Chefs Section */
+    .chefs .container{
+        display: flex;
+        
+    }
+    .chefs .container .outter{
+    width: 33%;
+    }
+    .chefs .container .outter .inner .image::before {
+        top: 250px; 
+    }
+}
+
+

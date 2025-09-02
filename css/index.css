@@ -1,0 +1,725 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+.container{
+    max-width: 1240px;
+    margin-inline: auto;
+    
+}
+img{
+    width: 100%;
+    /* border-radius: 25px; */
+}
+ul{
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+:root{
+  --main-color: (rgb(155, 0, 0));
+}
+/* =============== General rules =============== */
+/* =============== Essenial classes ============== */
+
+
+/* Start Color */
+.c-black {
+  color: black;
+}
+.c-white {
+  color: white;
+}
+/* start navbar  */
+#nav{
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  z-index: 99999;
+  position: sticky;
+
+  
+}
+.nav #nav ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav ul li{
+    padding: 10px;
+    
+}
+
+.nav i{
+  font-size: 25px;
+  padding-top: 10px;
+}
+.nav ul li a{
+    color: rgb(173, 172, 172);
+  
+}
+.nav ul li .active{
+  color: black;
+  position: relative;
+}
+.nav ul li .active::before{
+  content: "";
+  border-bottom: solid 2px rgb(155, 0, 0);
+  width: 45px;
+  position: absolute;
+  top: 25px;
+}
+
+.nav #nav h1 a{
+  position: relative;
+}
+.nav #nav h1 a span{
+  color: rgb(155, 0, 0);
+  position:absolute;
+  left: 115px;
+}
+
+.nav ul li:hover a{
+  border-bottom: solid 2px rgb(155, 0, 0);
+  color: rgb(126, 124, 124);
+}
+
+
+
+
+
+
+
+/* end nav bar  */
+
+
+/* start landing pade  */
+.landing{
+  padding-top: 115px;
+  margin-block: 50px;
+  height: 100vh;
+  background-color: rgb(227, 226, 226);
+}
+.landing .image{
+  width: 550px;
+  padding-top: 50px;
+}
+.landing .image:hover {
+  
+  animation: shake 0.5s;
+
+  
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.landing .container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.header-content{
+  padding-top: 100px;
+  width: 380px;
+  
+}
+.header-content h2{
+  padding-block: 20px;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+.header-content p{
+    padding-block: 20px;
+}
+.header-content .buttons{
+  display: flex;
+  gap: 50px;
+}
+.header-content .buttons .booking{
+  background-color: rgb(155, 0, 0);
+  width: 120px;
+  padding: 10px;
+  border-radius: 0% 20% 20% 20%;
+}
+.header-content .buttons .booking a{
+  color: white;
+}
+
+
+.header-content .buttons .video .vid{
+  display: flex;
+  gap: 20px
+  ;
+  padding-top: 15px;
+}
+.header-content .buttons .video .vid .icon{
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+}
+.header-content .buttons .video .vid .icon::before {
+  content: ''; 
+  display: inline-block;
+  width: 10px; 
+  height: 40px; 
+  background-color: red; 
+  position: absolute;
+  right: 30px;
+  bottom: 0px;;
+border-top-left-radius: 400px;
+    border-top-right-radius: 66px;
+  border: 3px solid red;
+  
+}
+/* end landing pade  */
+/* start chefs section */
+.chefs .container{
+  display: flex;
+  flex-direction: row;
+  
+}
+.chefs .chefs-header{
+  padding-bottom: 40px;
+}
+.chefs .title , .chefs h2{
+  text-align: center;
+
+}
+.chefs .container .outter{
+  width: 33%;
+  text-align: center;
+  padding: 15px;
+}
+.chefs .container .outter .inner{
+  position: relative;
+  transition: all 0.7s;
+}
+.chefs .container .outter .inner p , .chefs .container .outter .inner span{
+  color: rgb(181, 181, 181);
+  padding-top: 10px;
+}
+
+
+
+.chefs .container .outter .inner .image{
+  position: relative;
+}
+.chefs .container .outter .inner .image::before{
+  content: "";
+    position: absolute;
+    left: 0 ;
+    top: 325px; 
+    background-image: url(../images/team-shape.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 3.75rem;
+}
+.chefs .container .outter .inner .icons i{
+  padding-block: 5px;
+  opacity: 0.5;
+}
+.chefs .container .outter .inner .icons{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  width: fit-content;
+  position: absolute;
+  padding: 8px;
+  left: 105%;
+  top: 30px;
+  border-radius: 10%;
+  transition: 0.6s 0.2s ;
+  opacity: 0;
+}
+
+.chefs .container .outter .inner:hover {
+  transform: scale(1.1);
+}
+.chefs .container .outter .inner:hover .icons{
+  left: 87%;
+  opacity: 0.4;
+}
+.chefs .container .outter .inner .icons i:hover{
+  opacity: 1;
+}
+/* end chefs section */
+/* start gallery section  */
+
+.gallery{
+  padding-block: 100px;
+  text-align: center;
+  background-color:  rgb(227, 226, 226);
+}
+
+.gallery .span , .gallery p{
+  padding: 10px
+
+
+}
+.gallery p{
+    font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+.gallery p span{
+  color: red;
+}
+
+
+
+
+.gallery .gallery-style .container {
+  display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.2fr 0.8fr 1fr 1fr 1.2fr 0.8fr 1fr; 
+  grid-template-rows: auto;
+  gap: 29px 28px;  
+  grid-template-areas:
+    "s1 s1 s1 s1 s3 s3 s3 s3 s5 s5 s5 s5"
+    "s2 s2 s2 s2 s3 s3 s3 s3 s6 s6 s6 s6"
+    "s2 s2 s2 s2 s4 s4 s4 s4 s7 s7 s7 s7"
+    ".  .  .  .  s4 s4 s4 s4 s7 s7 s7 s7"
+    ".  .  .  .  s4 s4 s4 s4 s7 s7 s7 s7"
+    ".  .  .  .  s4 s4 s4 s4 s7 s7 s7 s7";
+}
+
+.s1 { grid-area: s1; }
+
+.s2 { grid-area: s2; }
+
+.s3 { grid-area: s3; }
+
+.s4 { grid-area: s4; }
+
+.s5 { grid-area: s5; }
+
+.s6 { grid-area: s6; }
+
+.s7 { grid-area: s7; }
+
+
+
+
+
+
+
+.s1, .s2, .s3, .s4, .s5, .s6, .s7 {
+    position: relative;
+    overflow: hidden; 
+    height: fit-content;
+    
+}
+.gallery-style .container img{
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* or contain, depending on your needs */
+  display: block;    /* removes default inline spacing */
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease , top 0.3s ease ;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  
+
+}
+
+
+.s1:hover .overlay,
+.s2:hover .overlay,
+.s3:hover .overlay,
+.s4:hover .overlay,
+.s5:hover .overlay,
+.s6:hover .overlay,
+.s7:hover .overlay {
+    opacity: 1; 
+    top: 0;
+}
+.s1:hover img,
+.s2:hover img,
+.s3:hover img,
+.s4:hover img,
+.s5:hover img,
+.s6:hover img,
+.s7:hover img{
+  transform: scale(1.2);
+}
+
+.overlay h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.overlay p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* end gallery section  */
+
+/* start contact section */
+
+.contact{
+    padding-top: 100px;
+  text-align: center;
+}
+
+
+.contact .span , .contact .title{
+  padding: 10px
+
+
+}
+.contact .title{
+    font-family: "Amatic SC", sans-serif;
+  font-size: 70px;
+}
+.contact p span{
+  color: red;
+}
+.container .map iframe{
+  width: 100%;
+}
+
+
+
+.container .data {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 20px;
+}
+
+
+.container .outter {
+  flex: 1 1 45%;
+  max-width: 50%;
+  box-sizing: border-box; 
+}
+
+
+.container .outter .contactinfo {
+  background-color: rgb(227, 226, 226);
+  display: flex;
+  align-items: center; 
+  padding: 15px; 
+}
+
+
+.container .outter .contactinfo .icon {
+  background-color: red; 
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-right: 15px; 
+}
+
+
+.container .outter .contactinfo .icon i {
+  color: white; 
+  font-size: 24px; 
+}
+.container .outter .contactinfo .icon i .text{
+  align-items: start;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group input {
+  flex: 1; 
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; 
+}
+
+input:focus,
+textarea:focus {
+  border-color: #666;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-main {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(149, 4, 4);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; 
+}
+
+.btn-main:hover {
+  background-color: red;
+}
+
+/* end contact section */
+
+
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Contact Form Section --- */
+.contact-form-section {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-main {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #d92424;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #b21e1e;
+}
+
+/* --- Footer Section --- */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
+    background-image: url('path/to/background-pattern.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+.logo{
+  width: 10%;
+}
+
+.logo img {
+    width: 100%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-media-heading {
+    margin-top: 30px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d92424;
+}
+
+.newsletter-col h4,
+.contact-col h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+}
+
+.subscribe-form button {
+    padding: 10px 15px;
+    background-color: #d92424;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.quick-links li i {
+    color: #d92424;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    color: #d92424;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #ccc;
+}
